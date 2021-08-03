@@ -1,4 +1,21 @@
-
 .header{
-    background-color: red;
+    width: 100%;
+    font-size:10px;
+    background-color: #9cb1ff;
 }
+
+.navBar{
+    width: 100%;
+    padding: 5px;
+}
+
+.navBar__ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+ }
+
+ .navBar__li{
+ }

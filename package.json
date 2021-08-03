@@ -5,7 +5,7 @@
   "main": "webdesign/src/app.js",
   "scripts": {
     "test": "clear && nodemon webdesign/src/app.js -e css,html,js,mjs,ejs",
-    "start":"node webdesign/src/app.js"
+    "start": "node webdesign/src/app.js"
   },
   "repository": {
     "type": "git",
