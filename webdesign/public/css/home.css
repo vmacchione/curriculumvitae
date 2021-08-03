@@ -1,24 +1,50 @@
 .mainHome{
+    margin: 20px 0px;
 }
 
 .sectionHomeResume{
     width: 100%;
-    border: red solid 1px;
     display: flex;
     flex-wrap: wrap;
 }
 
-.sectionHomeResume__article{
-    width: 80%;
-    border: blue solid 1px;
-    text-align: left;
+.sectionHomeResume__navBar{
+    border: blue 1px solid;
+    width: 70%;
+    align-self: center;
+}
+
+.sectionHomeResume__ul{
+    list-style: none;
+    border: black solid 1px;
+    text-align:left
+}
+
+.sectionHomeResume__li{
+    border: springgreen dotted 1px;
+    margin: 5px 0px;
+}
+
+.sectionHomeResume__link{
+    text-decoration: none;
 }
 
 .sectionHomeResume__figure{
-    width: 20%;
-    border: black solid 1px;
+    width: 30%;
 }
 
 .sectionHomeResume__img{
     width: 100%;
+}
+
+.sectionHomeResume__p{
+    line-height: 1.5;
+}
+
+.sectionHome__article{
+    border: red 1px solid;
+}
+
+.sectionHome__title{
+    text-align: center;
 }
