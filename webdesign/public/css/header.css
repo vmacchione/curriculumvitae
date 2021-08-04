@@ -17,6 +17,23 @@
     justify-content: space-between
  }
 
- /*.navBar__link{
+ .navBar__link{
      text-decoration: none;
  }
+
+ /* ---------Media queries ---------*/
+/* --MOBILE XL--*/
+@media (min-width: 577px) {}
+
+/* --TABLET/NETBOOK--*/
+@media (min-width: 769px) {}
+
+/* --DESKTOP--*/
+@media (min-width: 993px) {
+    .navBar__link:hover{
+        text-decoration: underline;
+    }
+}
+
+/* --INFINITO--*/
+@media (min-width: 1200px) {}
