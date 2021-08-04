@@ -1,9 +1,17 @@
 /* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
 
+/*
+Paleta de colores
+.color1 {color: #00391a;}
+.color2 {color: #006f83;}
+.color3 {color: #ff7600;}
+.color4 {color: #ffc243;}
+.color5 {color: #ffff8d;}
+*/
+
 html{
-    scroll-behavior: smooth;   
-    
+    scroll-behavior: smooth;
 }
 * {
     box-sizing: border-box;

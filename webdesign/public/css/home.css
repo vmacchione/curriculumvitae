@@ -1,3 +1,12 @@
+/*
+Paleta de colores
+.color1 {color: #00391a;}
+.color2 {color: #006f83;}
+.color3 {color: #ff7600;}
+.color4 {color: #ffc243;}
+.color5 {color: #ffff8d;}
+*/
+
 .mainHome{
     margin: 20px 0px;
 }
@@ -39,9 +48,31 @@
 }
 
 /*Aca arrancan las secciones*/
+.sectionHome{
+    padding: 100px 0px;
+}
+
+#aboutMe{
+    background-color:#ff7600 ;
+}
+#experience{
+    background-color: #2d8b58;
+}
+#education{
+    background-color: #ffc243;
+}
+#courses{
+    background-color: #006f83; 
+}
+#languages{
+    background-color: #ffff8d;
+}
+#hobbies{
+    background-color: #07ac51;
+};
+
 .sectionHome__article{
     border: red 1px solid;
-    margin: 20px 0px;
 }
 
 .sectionHome__title{
