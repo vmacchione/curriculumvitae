@@ -9,39 +9,20 @@
     <%- include('../partials/header') %>
 
     <main class="mainHome">
-        <section class="sectionHomeResume">
+        <section id="aboutMe" class="sectionHomeResume">
             <figure class="sectionHomeResume__figure">
                 <img class="sectionHomeResume__img" src="images/fotoCvCircle.png">
             </figure>
-            <nav class="sectionHomeResume__navBar">
-                <ul class="sectionHomeResume__ul">
-                    <li class="sectionHomeResume__li">
-                        <i class="fas fa-mobile-alt sectionHomeResume__icon"></i>
-                        2342-483157
-                    </li>
-                    <li class="sectionHomeResume__li">
-                        <i class="far fa-envelope sectionHomeResume__icon"></i>
-                        vicente.macchione1@gmail.com
-                    </li>
-                    <li class="sectionHomeResume__li">
-                        <i class="fas fa-home sectionHomeResume__icon"></i>
-                        Agüero 1595, CABA.
-                    </li>
-                    <li class="sectionHomeResume__li">
-                        <i class="fab fa-linkedin sectionHomeResume__icon"></i>
-                        <a class="sectionHomeResume__link" href="https://www.linkedin.com/in/vicentemacchione/">/vicentemacchione/</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-        <section id="aboutMe" class="sectionHome">
-            <article class="sectionHome__article">
-                <h2 class="sectionHome__title">Sobre mi</h2>
-                <p class="sectionHome__p">
+            <figure class="sectionHomeResume__figure">
+                <img class="sectionHomeResume__imgChange" src="images/avatarCocinaCircle.png">
+            </figure>
+            <article class="sectionHomeResume__article">
+                <h2 class="sectionHomeResume__title">Sobre mi</h2>
+                <h4 class="sectionHomeResume__paragraph">
                     Tengo 25 años, soltero, con alma de emprendedor,amante de la tecnología y de la cocina.
                     Me encuentro en busqueda de conocimientos prácticos, experiencia y crecimiento personal,
                     en un ámbito laboral desafiante, proactivo e innovador que se
-                    encuentre orientado a nuevos negocios digitales.</p>
+                    encuentre orientado a nuevos negocios digitales.</h4>
                 </article>
         </section>
         <section id="experience" class="sectionHome">
@@ -49,24 +30,25 @@
                 <h2 class="sectionHome__title">Experiencia</h2>
                 <h3 class="sectionHome__h3">Trainee Domestic Origination || Louis Dreyfus Company</h3>
                 <h4 class="sectionHome__period">01/2020 - Ongoing</h4>
-                <p class="sectionHomeResume__p">Exportadora de commodities y productos agropecuarios
+                <h4 class="sectionHome__paragraph">Exportadora de commodities y productos agropecuarios
                     Graduate Program. Programa de Jóvenes Profesionales enfocado en el área comercial.
                     Responsabilidades orientadas a impulsar y liderar proyectos de estrategia y transformación digital.
                     Desarrollo de solución digital colaborativa para la automatización de procesos en el sector comercial de originación de commodities.
-                </p>
+                </h4>
             </article>
             <article class="sectionHome__article">
                     <h3 class="sectionHome__h3">Responsable Administrativo de Canjes de Granos || Corteva Agriscience</h3>
                     <h4 class="sectionHome__period">07/2019-12/2019</h4>
-                    <p class="sectionHomeResume__p">Broker de granos Back Office Corteva. Seguimiento y
-                    Cobranza de los negocios confirmados</p>
+                    <h4 class="sectionHome__paragraph">
+                    Broker de granos Back Office Corteva. Seguimiento y
+                    Cobranza de los negocios confirmados</h4>
             </article>
             <article class="sectionHome__article">
                 <h3 class="sectionHome__h3">Asistente de Precios de Transferencia || Deloitte&Co S.A.</h3>
                 <h4 class="sectionHome__period">04/2018 - 03/2019</h4>
-                <p class="sectionHomeResume__p">Consultoría-TAX Confección de Formularios e Informes de
+                <h4 class="sectionHome__paragraph">Consultoría-TAX Confección de Formularios e Informes de
                     Precios de Transferencia. Seguimiento de
-                    cartera de clientes</p>
+                    cartera de clientes</h4>
                 </article>
         </section>
         <section id="education" class="sectionHome">
@@ -106,17 +88,42 @@
                     <h2 class="sectionHome__title">Actividades/Hobbies</h2>
                     <h3 class="sectionHome__h3">Emprendimiento Gastronómico Personal || VM Sushi</h3>
                     <h4 class="sectionHome__period">2018-Ongoing</h4>
-                    <p class="sectionHomeResume__p">
+                    <h4 class="sectionHome__paragraph">
                     Emprendimiento de Delivery de Sushi en Bragado,
                     Provincia de Buenos Aires. Tambíen como asistente
                     en la barra de sushi de Don Candioti.
-                    </p>
+                    </h4>
                     <h3 class="sectionHome__h3">Programa “Uniendo Metas”, Metodología Naciones Unidas || Asosicacion Conciencia
                     </h3>
                     <h4 class="sectionHome__period"> 01/2013 - Ongoing</h4>
-                    <p class="sectionHomeResume__p">Capacitaciones, organización y coordinación del programa.</p>
+                    <p class="sectionHome__p">Capacitaciones, organización y coordinación del programa.</p>
                 </article>
         </section>
+        <section id="contact" class="sectionHomeContact">
+                <h2 class="sectionHomeContact__title">Contacto</h2>
+                <nav class="sectionHomeContact__navBar">
+                    <ul class="sectionHomeContact__ul">
+                        <li class="sectionHomeContact__li">
+                            <i class="fas fa-mobile-alt sectionHomeContact__icon"></i>
+                            2342-483157
+                        </li>
+                        <li class="sectionHomeContact__li">
+                            <i class="far fa-envelope sectionHomeContact__icon"></i>
+                            vicente.macchione1@gmail.com
+                        </li>
+                        <li class="sectionHomeContact__li">
+                            <i class="fas fa-home sectionHomeContact__icon"></i>
+                            Agüero 1595, CABA.
+                        </li>
+                        <li class="sectionHomeContact__li">
+                            <i class="fab fa-linkedin sectionHomeContact__icon"></i>
+                            <a class="sectionHomeContact__link" href="https://www.linkedin.com/in/vicentemacchione/">/vicentemacchione/</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+        
     </main>
 
     <%- include('../partials/footer') %>

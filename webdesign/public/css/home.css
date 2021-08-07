@@ -8,48 +8,39 @@ Paleta de colores
 */
 
 .mainHome{
-    margin: 20px 0px;
+    padding-top: 60px;
 }
 
-/*Seccion con mis datos de contacto*/
+/*Seccion sobre mi*/
 .sectionHomeResume{
     width: 100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding: 200px 0px;
+    
 }
-
-.sectionHomeResume__navBar{
-    border: blue 1px solid;
-    width: 70%;
+.sectionHomeResume__article{
+    width: 60%;
     align-self: center;
+    
 }
-
-.sectionHomeResume__ul{
-    list-style: none;
-    border: black solid 1px;
-    text-align:left
-}
-
-.sectionHomeResume__li{
-    border: springgreen dotted 1px;
-    margin: 5px 0px;
-}
-
-.sectionHomeResume__link{
-    text-decoration: none;
-}
-
 .sectionHomeResume__figure{
     width: 30%;
+    text-align: center;
 }
-
 .sectionHomeResume__img{
     width: 100%;
+    border:rgb(150, 145, 145) 1px solid;
+    border-radius: 50%;
+}
+.sectionHomeResume__imgChange{
+    display: none;
 }
 
 /*Aca arrancan las secciones*/
 .sectionHome{
-    padding: 100px 0px;
+    padding: 200px 0px;
 }
 
 #aboutMe{
@@ -70,17 +61,36 @@ Paleta de colores
 #hobbies{
     background-color: #07ac51;
 };
-
 .sectionHome__article{
-    border: red 1px solid;
+    text-align: center;
 }
-
 .sectionHome__title{
     text-align: center;
 }
-
 .sectionHome__period{
-    color:#505c85;    
+    color:#505c85;   
+}
+
+/*Seccion de contacto*/
+.sectionHomeContact__navBar{
+    border: blue 1px solid;
+    width: 60%;
+    align-self: center;
+}
+
+.sectionHomeContact__ul{
+    list-style: none;
+    border: black solid 1px;
+    text-align:left
+}
+
+.sectionHomeContact__li{
+    border: springgreen dotted 1px;
+    margin: 5px 0px;
+}
+
+.sectionHomeContact__link{
+    text-decoration: none;
 }
 
 /* ---------Media queries ---------*/
@@ -89,19 +99,25 @@ Paleta de colores
 
 /* --TABLET/NETBOOK--*/
 @media (min-width: 769px) {
-    .sectionHome{
-        border: black solid 1px;
-        align-self: center;
-    }
     .sectionHomeResume__img{
-        width: 60%;
+        width: 40%;
 
     }
+    .sectionHome{
+        align-self: center;
+    }
+    
     .sectionHome__article{
         max-width: 50%;
-        margin: auto;
+        margin: 10px auto;
         font-size: 14px;
     }
+    .sectionHome__article:hover{
+        zoom:130%;
+        
+    }
+    
+
 }
 
 /* --DESKTOP--*/

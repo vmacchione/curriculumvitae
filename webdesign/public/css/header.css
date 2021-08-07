@@ -1,7 +1,13 @@
 .header{
     width: 100%;
     font-size:10px;
-    background-color: #9cb1ff;
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: grey;
 }
 
 .navBar{
@@ -14,11 +20,12 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between
+    justify-content: center;
  }
 
  .navBar__link{
      text-decoration: none;
+     padding: 0px 5px;
  }
 
  /* ---------Media queries ---------*/
@@ -30,8 +37,13 @@
 
 /* --DESKTOP--*/
 @media (min-width: 993px) {
+    .navBar{font-size: 14px;
+    }
     .navBar__link:hover{
         text-decoration: underline;
+    }
+    .navBar__ul{
+        justify-content: flex-end;
     }
 }
 
