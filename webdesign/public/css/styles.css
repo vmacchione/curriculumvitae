@@ -10,9 +10,7 @@ Paleta de colores
 .color5 {color: #ffff8d;}
 */
 
-html{
-    scroll-behavior: smooth;
-}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -22,24 +20,51 @@ html{
 
 .body{  
     width: 100%;
-    background-color: rgb(233, 231, 231);
+    font-size: 10px;
+    background-color: #f7f7f7;
 }
 
 .sectionHomeResume__paragraph{
-    font-size: 16px;
+    font-size: 12px;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     text-transform: none;
     font-style: italic;
     font-weight: 400;
     margin-bottom: 75px;
+    line-height: 1.5;
 }
 
 .sectionHome__paragraph{
-    font-size: 16px;
+    font-size: 12px;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     text-transform: none;
     font-style: italic;
     font-weight: 400;
     margin-bottom: 75px;
+    line-height: 1.5;
 }
 
+.sectionHome__icon{
+    font-size: 30px;
+    border: black solid 1px;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: rgb(238, 238, 98);
+}
+
+/* ---------Media queries ---------*/
+/* --MOBILE XL--*/
+@media (min-width: 577px) {}
+
+/* --TABLET/NETBOOK--*/
+@media (min-width: 769px) {   
+    html{
+        scroll-behavior: smooth;
+    }
+}
+
+/* --DESKTOP--*/
+@media (min-width: 993px) {}
+
+/* --INFINITO--*/
+@media (min-width: 1200px) {}
