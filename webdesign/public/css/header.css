@@ -1,144 +1,125 @@
 .header{
   width: 100%;
-  font-size:15px;
-  font-weight: bold;
-  padding: 10px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: black;
-  border: red 1px solid;
-  
 }
 
-.navBar__burgerMenu {
-    color: #fff;
-    font-size: 28px;
-    cursor: pointer;
-    display: block;
-    line-height: 0;
-    transition: 0.5s;
-    position: absolute;
-    top: 10px;
-    right: 30px;
-}
-.navBar__cross {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
 .navBar{
-visibility: hidden;
+  background-color: rgb(126, 202, 74);
+  height: 75px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  box-shadow: 5px 0 10px rgb(44, 43, 43);
 }
 
-.navBar {
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(78, 78, 78, 0.9);
-    transition: 0.3s;
-    z-index: 999;
+.logo{
+  color: white;
+  font-size: 15px;
+  padding: 0 80px;
+  font-weight: bold;
+  width: 20%;
+}
+
+.navBar__ul{
+  width: 100%;
+  display: flex;
+  list-style: none;
+  margin: auto;
+  width: 100%;
   }
 
-  .navBar__ul {
-    display: block;
-    position: absolute;
-    top: 55px;
-    right: 15px;
-    bottom: 15px;
-    left: 15px;
-    padding: 10px 0;
-    background-color: #fff;
-    overflow-y: auto;
-    transition: 0.3s;
+.navBar__li{
+  width: 14%;
+  border-radius: 3px;
+  margin: 0 5px;
+}
+
+.navBar__link{
+  padding: 5px 15px;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  text-transform: uppercase;
+  color:white;
+  text-align: center;
+}
+.navBar__li:hover, .navBar__li.active{
+  background-color: green;
+  transition: .4s;
+}
+
+.btn_menu{
+  margin-right: 30px;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.navBar__ul.show{
+  top: 65px;
+}
+
+@media screenn and (max-width: 952px) {
+
+  .logo{
+    font-size: 30px;
+    padding-left: 35px;
   }
-
-  .navBar > .navBar__ul > .navBar__li {
-    padding: 0;
-  }
-  
-  .navBar__link:hover:before, .navBar__li:hover > .navBar__link:before, .navBar :active:before {
-    visibility: hidden;
-  }
-  
-  
-  .navBar__link {
-    padding: 10px 20px;
-    font-size: 15px;
-    color: #4e4e4e;
-  }
-  
-  .navBar__link:hover, .navBar .active, .navBar__li:hover > .navBar__link {
-    color: #0078ff;
-  }
-  
-  .navBar .getstarted {
-    margin: 15px;
-  }
-  
-  
-
-
-
-
-
-
-
-
-
-
- /* ---------Media queries ---------*/
-/* --MOBILE XL--*/
-@media (min-width: 577px) {}
-
-/* --TABLET/NETBOOK--*/
-@media (min-width: 769px) {}
-
-/* --DESKTOP--*/
-@media (min-width: 993px) {
-  
-  /*
-  .navBar{
-    width: 100%;
-    padding: 20px 5px;
-    display: block;
-}*/
-
-/*
-  .navBar__ul{
-    width: 100%;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
- }*/
-
- /*
-
   .navBar__link{
-     text-decoration: none;
-     padding: 0px 5px;
-     color: white;
- }*/
- /*
-    .navBar{font-size: 14px;
-    }
-    */
-
-    /*
-    .navBar__link:hover{
-        text-decoration: underline;
-    }
-    */
-    /*
-    .navBar__ul{
-        justify-content: flex-end;
-    }
-    */
+    font-size: 16px;
+    border: 1px solid red;
   }
-/* --INFINITO--*/
-@media (min-width: 1200px) {}
+}
+
+@media screen and (max-width: 858px) {
+  .navBar{
+    height: 65px;
+    justify-content: flex-end;
+  }
+  .btn_menu{
+    display: inline-flex
+  }
+  .navBar__ul{
+    position: fixed;
+    width: 95%;
+    height: calc(100% - 65px);
+    background: #414141;
+    top:-100vh;
+    text-align: center;
+    transition: all .4s;
+    flex-direction: column;
+  }
+  .navBar__li{
+    margin:30px auto;
+    width: 50%;
+    line-height: 30px;
+
+  }
+  .navBar__li:hover{
+    background: none;
+  }
+  .navBar__link{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .navBar__link:hover{
+    color: #e9183b;
+  }
+  .logo{
+    font-size: 25px;
+    padding-left: 35px;
+  }
+}
+
+@media screen and (max-width: 858px) and (orientation:landscape) {
+    .navBar__li{
+      margin: 5px 0 0 0;
+    }
+    .navBar__ul{
+      overflow: scroll;
+      height: calc(100% - 65px);
+    }
+}
